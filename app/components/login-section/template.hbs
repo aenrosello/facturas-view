@@ -1,0 +1,30 @@
+<div class='login'>
+    {{#paper-card}}
+      {{#paper-toolbar}}
+        {{#paper-toolbar-tools}}
+          <h2>{{company}}</h2>
+        {{/paper-toolbar-tools}}
+      {{/paper-toolbar}}
+      {{#paper-card-content}}
+        <div class='layout-column'>
+          {{paper-input
+            type='email'
+            label='Email'
+            required=true
+            value=_email
+            onChange=(action (mut _email))}}
+          {{paper-input
+            type='password'
+            label='Password'
+            value=_password
+            required=true
+            onChange=(action (mut _password))}}
+        </div>
+        <div class='layout-column layout-align-center-center'>
+            {{#paper-button raised=true primary=true onClick=(action 'login' _email _password)}}
+              Login
+            {{/paper-button}}
+        </div>
+      {{/paper-card-content}}
+    {{/paper-card}}
+</div>

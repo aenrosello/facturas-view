@@ -1,0 +1,10 @@
+.ember-notify-cn {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  height: 10px;
+}
+
+.ember-notify-default.ember-notify-cn {
+  z-index: 25000;
+}
