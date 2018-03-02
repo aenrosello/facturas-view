@@ -2,6 +2,7 @@ import Component from '@ember/component';
 import utilities from '../../mixins/utilities'
 
 export default Component.extend(utilities, {
+  tagName: '',
   company: 'no name',
   _email: '',
   _password:'',
